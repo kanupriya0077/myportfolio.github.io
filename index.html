@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#accomplishments" class="menu-btn">Accomplishments</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="home" id="home">
+        <di class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, I am </div>
+                <div class="text-2">Kanupriya</div>
+                <div class="text-3">I am a <span class="typing"></span></div>
+
+            </div>
+        </di>
+    </section>
+
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="image.jpg">
+                </div>
+                <div class="column right">
+                    <div class="text">I am Kanupriya ,<br> I am a <span class="typing-2"></span></div>
+                    <p>I am a student at Centurion University, Bhubaneshwar graduating in 2023. I am very enthusiastic at my work. My creativity and punctuality makes my professionalism shine.</p>
+                    <a href="Kanupriya.pdf">View CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>C++</span>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>C</span>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Kotlin</span>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="accomplishments" id="accomplishments">
+        <div class="max-width">
+            <h2 class="title">Accomplishments</h2>
+            <div class="accomplishments-content">
+                <div class="top" id="top">
+                    <ul>
+                        <li><a class="btn active" onclick="filterSelection('all')"> All</a></li>
+                        <li><a class="btn" onclick="filterSelection('project')"> Projects</a></li>
+                        <li><a class="btn" onclick="filterSelection('certificate')"> Certificate</a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <div class="columns project">
+                        <div class="content">
+                            <img src="projects/project2.png" alt="project2" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                            <h6>World Population Dashboard</h6>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="columns project">
+                        <div class="content">
+                            <img src="projects/project3.png" alt="project3" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                            <h6>Category Product System</h6>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="columns project">
+                        <div class="content">
+                            <img src="projects/project1.png" alt="project1" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                            <h6>HandWritten Character Recognition</h6>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="columns project">
+                        <div class="content">
+                            <img src="projects/project4.png" alt="project4" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                            <h6>Online Voting System</h6>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="columns project">
+                        <div class="content">
+                            <img src="projects/project5.png" alt="project5" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                            <h6>Phone book directory</h6>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="columns certificate">
+                        <div class="content">
+                            <img src="projects/certificate1.PNG" alt="certificate1" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="columns certificate">
+                        <div class="content">
+                            <img src="projects/certificate2.PNG" alt="certificate2" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="columns certificate">
+                        <div class="content">
+                            <img src="projects/certificate3.PNG" alt="certificate3" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+                    <span class="next" onclick="plusSlides(1)">&#10095;</span>
+                    <div class="modal-content">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 8</div>
+                            <img src="projects/project2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 8</div>
+                            <img src="projects/project3.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 8</div>
+                            <img src="projects/project1.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 8</div>
+                            <img src="projects/project4.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 8</div>
+                            <img src="projects/project5.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 8</div>
+                            <img src="projects/certificate1.PNG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">7 / 8</div>
+                            <img src="projects/certificate2.PNG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">8 / 8</div>
+                            <img src="projects/certificate3.PNG" style="width:100%">
+                        </div>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+                        <br>
+                        <div class="columnn">
+                            <img class="demo cursor" src="projects/project22.png" style="width:100%" onclick="currentSlide(1)">
+                        </div>
+                        <div class="columnn">
+                            <img class="demo cursor" src="projects/project3.png" style="width:100%" onclick="currentSlide(2)">
+                        </div>
+                        <div class="columnn">
+                            <img class="demo cursor" src="projects/project1.png" style="width:100%" onclick="currentSlide(3)">
+                        </div>
+                        <div class="columnn">
+                            <img class="demo cursor" src="projects/project4.png" style="width:100%" onclick="currentSlide(4)">
+                        </div>
+                        <div class="columnn">
+                            <img class="demo cursor" src="projects/project5.png" style="width:100%" onclick="currentSlide(5)">
+                        </div>
+                        <div class="columnn">
+                            <img class="demo cursor" src="projects/certificate1.PNG" style="width:100%" onclick="currentSlide(6)">
+                        </div>
+                        <div class="columnn">
+                            <img class="demo cursor" src="projects/certificate2.PNG" style="width:100%" onclick="currentSlide(7)">
+                        </div>
+                        <div class="columnn">
+                            <img class="demo cursor" src="projects/certificate3.PNG" style="width:100%" onclick="currentSlide(8)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in touch</div>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Kanupriya</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Jamshedpur, Jharkhand</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">kanupriyakumari2001@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-linkedin"></i>
+                            <div class="info">
+                                <div class="head">Linkedin</div>
+                                <div class="sub-title"><a href="https://www.linkedin.com/in/kanupriya-kumari-423685200/">Kanupriya Kumari</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-github"></i>
+                            <div class="info">
+                                <div class="head">Github</div>
+                                <div class="sub-title"><a href="https://github.com/kanupriya0077">kanupriya0077</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="https://formsubmit.co/kanupriyakumari2001@gmail.com" method="post">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Name" required style="background-color: black; color: white;">
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="email" placeholder="Email" required style="background-color: black; color: white;">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="subject" placeholder="Subject" required style="background-color: black; color: white;">
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name="description" placeholder="Describe project..." required style="background-color: black; color: white;"></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Created by <a href="https://github.com/kanupriya0077/myportfolio.github.io">Kanupriya</a>  <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

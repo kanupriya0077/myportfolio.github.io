@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background-color: crimson;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: white;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: crimson;
+}
+
+.navbar.sticky .menu li a {
+    color: white;
+}
+
+.menu-btn {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 30px;
+    background: none;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: crimson;
+    z-index: 999;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.home {
+    display: flex;
+    background-image: url("https://cdn.wallpapersafari.com/88/66/Uowyg0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: crimson;
+    font-weight: 500;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+    color: white;
+    background: none;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.about,
+.skills,
+.qualifications,
+.accomplishments,
+.contact,
+footer {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.about .about-content,
+.skills .skills-content,
+.accomplishments-content,
+.contact .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.about .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.about .title::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50x);
+}
+
+.about .title::after {
+    content: "who i am";
+    position: absolute;
+    padding: 5px;
+    background: #fff;
+    color: crimson;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50x);
+    font-size: 20px;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 54%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: crimson;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 36px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: crimson;
+    background: none;
+}
+
+@media(max-width:1300px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:1104px) {
+    .about .about-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media(max-width:991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media(max-width:947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before {
+        content: '\f00d';
+    }
+    .navbar .menu {
+        position: fixed;
+        background: black;
+        height: 100vh;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width {
+        max-width: 800px;
+    }
+    .about .about-content .column {
+        width: 100%;
+    }
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0px auto 60px;
+    }
+    .about .about-content .right {
+        width: 100%;
+    }
+}
+
+@media(max-width:690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+    .home .home-content a {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:500px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+}
+
+.skills,
+.contact {
+    background-color: black;
+    color: white;
+}
+
+.skills .title::after {
+    content: "what i know";
+    background-color: black;
+}
+
+.skills .title::before {
+    background: white;
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .right .bars,
+.skills .skills-content .left .bars {
+    margin-bottom: 15px;
+    padding: 8px;
+    color: white;
+}
+
+.skills .skills-content .right .info,
+.skills .skills-content .left .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line,
+.skills .skills-content .left .line {
+    height: 7px;
+    width: 100%;
+    background: crimson;
+}
+
+
+/*      ACCOMPLISHMENTS         */
+
+.accomplishments {
+    height: 750px;
+}
+
+.accomplishments .title::after {
+    content: "my work and achievments";
+}
+
+.accomplishments .title::before {
+    width: 350px;
+}
+
+.accomplishments-content ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 850px;
+}
+
+.accomplishments-content .top li {
+    float: left;
+}
+
+.accomplishments-content .top li a {
+    display: block;
+    color: crimson;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.accomplishments-content li a:not(.active) {
+    color: black;
+}
+
+.accomplishments-content .top .btn:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.accomplishments-content .bottom {
+    margin: 10px -16px;
+}
+
+.accomplishments-content .bottom,
+.accomplishments-content .bottom>.accomplishments-content .bottom .column {
+    padding: 0 8px;
+}
+
+.accomplishments-content .bottom .columns {
+    float: left;
+    width: 25%;
+    display: none;
+}
+
+.accomplishments-content .columnn {
+    float: left;
+    width: 12%;
+    padding-top: 15px;
+}
+
+.accomplishments-content .demo {
+    opacity: 0.6;
+}
+
+.accomplishments-content .bottom::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.accomplishments-content .bottom .content {
+    padding: 10px;
+}
+
+.accomplishments-content .bottom .show {
+    display: block;
+}
+
+.accomplishments-content .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.accomplishments-content .modal-content {
+    position: relative;
+    background-color: black;
+    background-size: 100px;
+    margin: auto;
+    padding: 0;
+    width: 70%;
+    /* max-width: 1200px; */
+    transition: all 0.3s ease-in;
+}
+
+.accomplishments-content .mySlides {
+    display: flex;
+    left: 300px;
+}
+
+.accomplishments-content .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.accomplishments-content .close:hover,
+.accomplishments-content .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.accomplishments-content .mySlides {
+    display: none
+}
+
+.accomplishments-content .cursor {
+    cursor: pointer;
+}
+
+.accomplishments-content .prev {
+    cursor: pointer;
+    position: relative;
+    top: 335px;
+    left: 25px;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    transition: 0.6s ease;
+    padding: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.accomplishments-content .next {
+    cursor: pointer;
+    top: 335px;
+    right: 25px;
+    padding: 16px;
+    color: white;
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.accomplishments-content .prev:hover,
+.accomplishments-content .next:hover {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.accomplishments-content .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.accomplishments-content img {
+    margin-bottom: -4px;
+}
+
+.accomplishments-content .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.accomplishments-content .demo {
+    opacity: 0.6;
+}
+
+.accomplishments-content .active,
+.accomplishments-content .demo:hover {
+    opacity: 1;
+}
+
+.accomplishments-content img.hover-shadow {
+    transition: 0.3s;
+}
+
+.accomplishments-content .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact .title::after {
+    content: "get in touch";
+    background-color: black;
+}
+
+.contact .title::before {
+    background: white;
+}
+
+.contact .contact-content .columns {
+    width: (50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: crimson;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+    color: darkgray;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .email {
+    margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button {
+    height: 47px;
+    width: 170px;
+}
+
+.contact .right form .button button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .button button:hover {
+    color: crimson;
+    background: none;
+}
+
+footer {
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: crimson;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
