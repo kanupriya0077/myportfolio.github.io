@@ -299,6 +299,9 @@ section .title::after {
         height: 350px;
         width: 350px;
     }
+    .accomplishments-content .mySlides {
+        padding-top: 100px;
+    }
 }
 
 @media(max-width:991px) {
@@ -361,8 +364,14 @@ section .title::after {
     .about .about-content .right {
         width: 100%;
     }
+    .accomplishments-content .mySlides {
+        padding-top: 170px;
+    }
+    .accomplishments {
+        height: 250px;
+    }
 }
-
+ 
 @media(max-width:690px) {
     .max-width {
         padding: 0 23px;
@@ -376,6 +385,12 @@ section .title::after {
     .home .home-content a {
         font-size: 20px;
     }
+    .accomplishments-content .mySlides {
+        padding-top: 240px;
+    }
+    .accomplishments {
+        height: 250px;
+    }
 }
 
 @media(max-width:500px) {
@@ -384,6 +399,9 @@ section .title::after {
     }
     .home .home-content .text-3 {
         font-size: 27px;
+    }
+    .accomplishments {
+        height: 250px;
     }
 }
 
@@ -437,18 +455,17 @@ section .title::after {
 }
 
 .accomplishments .title::after {
-    content: "my work and achievments";
+    content: "work and achievments";
 }
 
 .accomplishments .title::before {
-    width: 350px;
+    width: 330px;
 }
 
 .accomplishments-content ul {
     list-style-type: none;
     margin: 0;
     overflow: hidden;
-    padding-left: 850px;
 }
 
 .accomplishments-content .top li {
