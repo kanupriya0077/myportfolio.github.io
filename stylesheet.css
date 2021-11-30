@@ -371,7 +371,7 @@ section .title::after {
         height: 250px;
     }
 }
- 
+
 @media(max-width:690px) {
     .max-width {
         padding: 0 23px;
@@ -390,6 +390,9 @@ section .title::after {
     }
     .accomplishments {
         height: 250px;
+    }
+    .accomplishments-content .columnn {
+        padding-right: 5px;
     }
 }
 
@@ -510,8 +513,9 @@ section .title::after {
 
 .accomplishments-content .columnn {
     float: left;
-    width: 12%;
+    width: 10%;
     padding-top: 15px;
+    padding-right: 15px;
 }
 
 .accomplishments-content .demo {
