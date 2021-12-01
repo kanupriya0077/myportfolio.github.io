@@ -466,7 +466,7 @@ section .title::after {
 /*      ACCOMPLISHMENTS         */
 
 .accomplishments .title::after {
-    content: "my work and achievments";
+    content: "my achievments";
 }
 
 .accomplishments .title::before {
