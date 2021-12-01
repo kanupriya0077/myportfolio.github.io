@@ -373,6 +373,9 @@ section .title::after {
     .accomplishments {
         height: 550px;
     }
+    .accomplishments-content .columnn {
+        display: none;
+    }
 }
 
 @media(max-width:690px) {
@@ -396,6 +399,9 @@ section .title::after {
     }
     .accomplishments-content .columnn {
         padding-right: 5px;
+    }
+    .accomplishments-content .columnn {
+        display: none;
     }
 }
 
@@ -464,7 +470,7 @@ section .title::after {
 }
 
 .accomplishments .title::before {
-    width: 330px;
+    width: 270px;
 }
 
 .accomplishments-content ul {
