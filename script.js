@@ -43,7 +43,7 @@ function filterSelection(c) {
     x = document.getElementsByClassName("columns");
     var l = x.length;
     if (c == "all") {
-        l = 7;
+        l = 8;
         c = "";
     }
     for (i = 0; i < l; i++) {
