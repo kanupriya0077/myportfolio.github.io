@@ -292,6 +292,9 @@ section .title::after {
     .home .max-width {
         margin-left: 0px;
     }
+    .accomplishments {
+        height: 750px;
+    }
 }
 
 @media(max-width:1104px) {
@@ -368,7 +371,7 @@ section .title::after {
         padding-top: 170px;
     }
     .accomplishments {
-        height: 250px;
+        height: 550px;
     }
 }
 
@@ -389,7 +392,7 @@ section .title::after {
         padding-top: 240px;
     }
     .accomplishments {
-        height: 250px;
+        height: 500px;
     }
     .accomplishments-content .columnn {
         padding-right: 5px;
@@ -404,7 +407,7 @@ section .title::after {
         font-size: 27px;
     }
     .accomplishments {
-        height: 250px;
+        height: 500px;
     }
 }
 
@@ -452,10 +455,6 @@ section .title::after {
 
 
 /*      ACCOMPLISHMENTS         */
-
-.accomplishments {
-    height: 750px;
-}
 
 .accomplishments .title::after {
     content: "work and achievments";
