@@ -409,6 +409,9 @@ section .title::after {
     .accomplishments {
         height: 500px;
     }
+    .accomplishments-content .columnn {
+        display: none;
+    }
 }
 
 .skills,
